@@ -1,2 +1,7 @@
 const router=require("express").Router()
-const User=require("../models/Pin")
+const Pin=require("../models/Pin")
+
+
+router.post("/",(req,res)=>{
+    const newPin=new Pin(req.body)
+})
