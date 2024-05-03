@@ -1,8 +1,10 @@
 const router = require("express").Router();
 const User = require("../models/User");
 
-router.post("/", async (req, res) => {
-  const newPin = new Pin(req.body);
+//register
+
+router.post("/register", async (req, res) => {
+  const newPin = new User(req.body);
   try {
     const davepin = await newPin.save();
     res.status(200).json(davepin);
@@ -11,3 +13,7 @@ router.post("/", async (req, res) => {
     res.status(500).json("error here", err);
   }
 });
+
+//login
+
+module.exports = router;
