@@ -36,7 +36,12 @@ router.post("/login", async (req, res) => {
     //   password: hashed,
     // });
 const user=await User.findOne({username:req.body.username})
+!user&&res.status(400).json("wrong username or password")
 
+const validPassword=await bcrypt.compare(req.body.password,user.password)
+!validPassword&&res.status(400).json("wrong username or password")
+
+res.status(200).json({id:user._id,username:user.username})
     // const user = await newPin.save();
 
     // res.status(200).json(user._id);
