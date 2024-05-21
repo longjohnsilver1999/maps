@@ -1,6 +1,8 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
+import { AppContext } from '../context/AppContext';
 
 const Regions = () => {
+  const { updateFormData } = useContext(AppContext);
   const [rows, setRows] = useState([{ id: 1, name: '', country: '' }]);
 
   const handleAddRow = () => {
@@ -19,6 +21,7 @@ const Regions = () => {
       return row;
     });
     setRows(newRows);
+    updateFormData('regions', newRows);
   };
 
   return (

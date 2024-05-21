@@ -1,5 +1,3 @@
-import logo from './logo.svg';
-import './App.css';
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Sidebar from './components/Sidebar';
@@ -9,23 +7,27 @@ import Specifications from './components/Specifications';
 import Devices from './components/Devices';
 import FilterOptions from './components/FilterOptions';
 import SubmitSection from './components/SubmitSection';
+import './App.css'
 function App() {
   return (
     <Router>
-    <div className="app">
-      <Sidebar />
-      <div className="content">
-        <Routes>
-          <Route path="/project-information" component={ProjectInformation} />
-          <Route path="/regions" component={Regions} />
-          <Route path="/specifications" component={Specifications} />
-          <Route path="/devices" component={Devices} />
-          <Route path="/filter-options" component={FilterOptions} />
-          <Route path="/submit" component={SubmitSection} />
-        </Routes>
+      <div className="app d-flex">
+        <div>
+        <Sidebar />
+        </div>
+     
+        <div className="content">
+          <Routes>
+            <Route path="/project-information" element={<ProjectInformation />} />
+            <Route path="/regions" element={<Regions />} />
+            <Route path="/specifications" element={<Specifications />} />
+            <Route path="/devices" element={<Devices />} />
+            <Route path="/filter-options" element={<FilterOptions />} />
+            <Route path="/submit" element={<SubmitSection />} />
+          </Routes>
+        </div>
       </div>
-    </div>
-  </Router>
+    </Router>
   );
 }
 

@@ -1,14 +1,18 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Formik, Form, Field } from 'formik';
 import Select from 'react-select';
+import { AppContext } from '../context/AppContext';
 
 const ProjectInformation = () => {
+  const { updateFormData } = useContext(AppContext);
+
   const initialValues = {
     projectName: '',
     country: '',
   };
 
   const handleSubmit = (values) => {
+    updateFormData('projectInformation', values);
     console.log('Form Data', values);
   };
 
