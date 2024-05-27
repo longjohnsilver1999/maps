@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sumit Katyal - Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap">
+  <style>
+    body {
+      font-family: 'Fira Sans', sans-serif;
+      background-color: #f0f8ff;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      text-align: center;
+      padding: 50px 0;
+      background: linear-gradient(45deg, #00aaff, #00ffaa);
+      color: white;
+    }
+
+    header h1 {
+      font-size: 3em;
+    }
+
+    header p {
+      font-size: 1.5em;
+    }
+
+    header .contact-info {
+      margin-top: 10px;
+    }
+
+    header .contact-info p a {
+      color: white;
+      text-decoration: none;
+    }
+
+    section {
+      padding: 50px 10%;
+      background-color: white;
+      margin: 20px 0;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    section h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: #00aaff;
+    }
+
+    .experience-item,
+    .project-item,
+    .education-item {
+      margin-bottom: 30px;
+    }
+
+    .experience-item h3,
+    .project-item h3,
+    .education-item h3 {
+      font-size: 1.5em;
+      color: #00aaff;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
+    a {
+      color: #00aaff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px 0;
+      background-color: #00aaff;
+      color: white;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    .animate__animated {
+      --animate-duration: 2s;
+    }
+
+    /* Additional CSS for floating bits */
+    .floating-bit {
+      position: absolute;
+      bottom: 0;
+      width: 10px;
+      height: 10px;
+      background-color: #00aaff;
+      border-radius: 50%;
+      opacity: 0.6;
+      animation: floatUp 10s infinite;
+    }
+
+    @keyframes floatUp {
+      0% {
+        transform: translateY(0);
+        opacity: 0.6;
+      }
+      100% {
+        transform: translateY(-100vh);
+        opacity: 0;
+      }
+    }
+
+    /* CSS for memes */
+    .meme {
+      display: block;
+      margin: 20px auto;
+      max-width: 100%;
+      height: auto;
+      border-radius: 15px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 class="animate__animated animate__bounce">Sumit Katyal</h1>
+    <p>Software Engineer</p>
+    <div class="contact-info">
+      <p>+91-8799772995 | <a href="mailto:skatyal1999@gmail.com">skatyal1999@gmail.com</a> | <a href="https://www.linkedin.com/in/sumit-k-ab8664167/">LinkedIn</a> | <a href="https://github.com/longjohnsilver1999">GitHub</a></p>
+    </div>
+  </header>
+
+  <section id="summary">
+    <h2>Summary</h2>
+    <p>Results-oriented and detail-driven Software Engineer with a strong background in Javascript programming and a passion for ensuring software reliability.</p>
+    <img src="https://media.giphy.com/media/LmNwrBhejkK9EFP504/giphy.gif" alt="Programming Meme" class="meme">
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="experience-item">
+      <h3>Full Stack Developer at DNS GROUP Saraf FinCom Pvt. Ltd.</h3>
+      <p>May 2023 - Present | Delhi, India</p>
+      <ul>
+        <li>Worked on Company's E-Commerce Web Application with frontend in ReactJS, created React components, used other features of React like React hooks, and styled the application using BootStrap.</li>
+        <li>Created APIs, models or tables in MySQL using Sequelize ORM library for NodeJS also created controllers.</li>
+        <li>Used NodeJS, ExpressJS, and multiple other packages and third-party libraries, middlewares.</li>
+        <li>Contributed to the project while being as resourceful, detail-oriented, efficient, and collaborative as possible.</li>
+        <li>Contributed to helping junior developers while solving complex requirements and bringing efficient solutions with the lowest complexity.</li>
+      </ul>
+    </div>
+    <div class="experience-item">
+      <h3>NodeJs Developer Intern at BIKSWEE Group</h3>
+      <p>Aug 2022 - Sept 2022 | Noida, India</p>
+      <ul>
+        <li>Created APIs and worked on the backend of the organization's application using NodeJS.</li>
+      </ul>
+    </div>
+    <div class="experience-item">
+      <h3>Web Development Intern at BBB Creations</h3>
+      <p>Aug 2020 - Sept 2020 | Remote</p>
+      <ul>
+        <li>Created frontend of an application using ReactJS and styled using Bootstrap.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-item">
+      <h3>Employee Review System</h3>
+      <p>Live Link: <a href="https://ersdummysk.onrender.com/users/sign-in">https://ersdummysk.onrender.com/users/sign-in</a></p>
+      <p>Code: <a href="https://github.com/longjohnsilver1999/employeereviewfail">https://github.com/longjohnsilver1999/employeereviewfail</a></p>
+      <ul>
+        <li>An application built to assign tasks to employees and add reviews about other employees in an organization.</li>
+        <li>A CRUD Application with authorization, has both admin view and employee view.</li>
+        <li>Built using NodeJS, ExpressJS, DB using MongoDB Atlas, and passport is used for authentication.</li>
+      </ul>
+    </div>
+    <div class="project-item">
+      <h3>Habit Track Application</h3>
+      <p>Live Link: <a href="https://hhhhh-five.vercel.app/">https://hhhhh-five.vercel.app/</a></p>
+      <p>Code: <a href="https://github.com/longjohnsilver1999/habits">https://github.com/longjohnsilver1999/habits</a></p>
+      <ul>
+        <li>A user-friendly application helps users track habits for the past 21 days and helps them become more consistent.</li>
+        <li>Built using ReactJS, Redux Toolkit, and MongoDB Atlas is used as the database.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Technical Skills</h2>
+    <ul>
+      <li><strong>Front End and Languages:</strong> HTML, CSS, JavaScript, TypeScript, ReactJS, VueJS, Java</li>
+      <li><strong>Developer Tools:</strong> VS Code, NPM, GIT, SVN</li>
+      <li><strong>Back End:</strong> NodeJS, ExpressJS, MongoDB, Mongoose, Sequelize, Firebase, MySQL</li>
+    </ul>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <div class="education-item">
+      <h3>GGSIPU, HMR Institute of Technology and Management</h3>
+      <p>BTECH, Computer Science Engineering (2017 - 2021)</p>
+    </div>
+  </section>
+
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <ul>
+      <li><strong><a href="https://drive.google.com/file/d/13L8pgBhWMKnsZ6f5CWdFgvJulFGqY_Kb/view">ReactJS Frontend Development</a></strong></li>
+      <li><strong><a href="https://drive.google.com/file/d/18xSY4vkvawVdsyNOq5JFFlaZIjHfGbaF/view">Backend Development</a></strong></li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>© 2024 Sumit Katyal</p>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const header = document.querySelector('header');
+      header.classList.add('animate__animated', 'animate__bounceInDown');
+    });
+
+    function createFloatingBits() {
+      const numBits = 50;
+      for (let i = 0; i < numBits; i++) {
+        const bit = document.createElement('div');
+        bit.classList.add('floating-bit');
+        document.body.appendChild(bit);
+        bit.style.left = `${Math.random() * 100}vw`;
+        bit.style.animationDuration = `${Math.random() * 5 + 3}s`;
+      }
+    }
+
+    createFloatingBits();
+  </script>
+</body>
+</html>
