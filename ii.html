@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bruce Wayne - The Dark Knight</title>
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: url('https://wallpaperaccess.com/full/3850774.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #ffffff;
+      background-color: #0a0a0a;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.9);
+      border-bottom: 3px solid #1e90ff;
+    }
+
+    .bat-logo img {
+      width: 80px;
+    }
+
+    .intro-text {
+      text-align: center;
+      flex-grow: 1;
+    }
+
+    .intro-text h1 {
+      font-size: 2.5em;
+      margin: 0;
+      color: #1e90ff;
+    }
+
+    .intro-text p {
+      margin: 5px 0;
+      font-style: italic;
+      color: #1e90ff;
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      background-color: rgba(0, 0, 0, 0.9);
+    }
+
+    nav ul li {
+      margin: 0 20px;
+    }
+
+    nav ul li a {
+      color: #1e90ff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.2em;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #00bfff;
+    }
+
+    section {
+      padding: 50px;
+      background-color: rgba(0, 0, 0, 0.8);
+      margin: 20px;
+      border-radius: 10px;
+      border: 1px solid #1e90ff;
+    }
+
+    section h2 {
+      color: #1e90ff;
+      font-size: 2em;
+      border-bottom: 2px solid #1e90ff;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+
+    section p,
+    section ul {
+      font-size: 1.2em;
+      line-height: 1.6;
+    }
+
+    section ul {
+      margin-top: 10px;
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.9);
+      border-top: 3px solid #1e90ff;
+    }
+
+    .bat-signal {
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      width: 150px;
+      height: 150px;
+      background: url('https://upload.wikimedia.org/wikipedia/commons/7/71/Batman_black_logo.svg') no-repeat center center;
+      background-size: contain;
+      animation: signal 3s ease-in-out infinite;
+    }
+
+    @keyframes signal {
+      0% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-20px);
+      }
+
+      100% {
+        transform: translateY(0);
+      }
+    }
+
+    .interactive-hover:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s ease-in-out;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="bat-logo">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/7/71/Batman_black_logo.svg" alt="Batman Logo">
+    </div>
+    <div class="intro-text">
+      <h1>Bruce Wayne - The Dark Knight</h1>
+      <p>Gotham City | Dark Knight | Crime Fighter</p>
+    </div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#summary">Summary</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+    </ul>
+  </nav>
+
+  <section id="summary" class="interactive-hover">
+    <h2>Summary</h2>
+    <p>I am Bruce Wayne, also known as the Dark Knight of Gotham City. With a strong background in crime fighting and justice, I have dedicated my life to making Gotham a safer place for its citizens. As the CEO of Wayne Enterprises, I use my resources to develop cutting-edge technologies to combat crime.</p>
+    <p>In my spare time, I patrol the streets of Gotham as Batman, utilizing my combat skills and advanced gadgets to apprehend criminals and protect the innocent.</p>
+    <p>I am proficient in multiple martial arts, detective work, and have an arsenal of high-tech gadgets at my disposal, including the Batmobile, Bat-Signal, and various Batarangs. I am committed to the protection of Gotham and the pursuit of justice.</p>
+  </section>
+
+  <section id="experience" class="interactive-hover">
+    <h2>Experience</h2>
+    <div class="experience-item">
+      <h3>Wayne Enterprises</h3>
+      <p>Gotham City</p>
+      <p>CEO | 2000 - Present</p>
+      <ul>
+        <li>Lead strategic initiatives to develop advanced technologies for crime prevention and detection.</li>
+        <li>Managed a team of engineers and scientists to innovate new solutions for Gotham's security.</li>
+        <li>Established partnerships with law enforcement agencies to deploy crime-fighting tools across the city.</li>
+        <li>Regularly attend board meetings and public events to promote corporate social responsibility and community outreach.</li>
+      </ul>
+    </div>
+    <div class="experience-item">
+      <h3>Batman</h3>
+      <p>Gotham City</p>
+      <p>Vigilante | 1995 - Present</p>
+      <ul>
+        <li>Patrol the streets of Gotham City to prevent crime and protect its citizens.</li>
+        <li>Utilize advanced combat skills and high-tech gadgets to apprehend criminals.</li>
+        <li>Work closely with Commissioner Gordon and the GCPD to address major threats to the city.</li>
+        <li>Investigate and solve complex cases involving Gotham's most notorious villains.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="projects" class="interactive-hover">
+    <h2>Projects</h2>
+    <div class="project-item">
+      <h3>Batmobile 2.0</h3>
+      <p>A high-tech vehicle equipped with state-of-the-art weaponry and surveillance systems. The Batmobile is designed to handle high-speed chases and provide a mobile command center for Batman.</p>
+    </div>
+    <div class="project-item">
+      <h3>Bat-Signal Upgrade</h3>
+      <p>Enhanced the iconic Bat-Signal with LED technology for improved visibility and energy efficiency. The new Bat-Signal serves as a powerful symbol of hope for the citizens of Gotham.</p>
+    </div>
+    <div class="project-item">
+      <h3>Gotham Crime Database</h3>
+      <p>Developed a database system to track criminal activity and analyze crime patterns across Gotham City. The database helps in predicting future crimes and identifying crime hotspots.</p>
+    </div>
+  </section>
+
+  <section id="education" class="interactive-hover">
+    <h2>Education</h2>
+    <div class="education-item">
+      <h3>Gotham University</h3>
+      <p>Gotham City</p>
+      <p>Bachelor of Science in Computer Science | Class of 1995</p>
+      <ul>
+        <li>Graduated with honors as the top student in the Computer Science program.</li>
+        <li>Thesis project focused on developing AI algorithms for crime prediction in Gotham City.</li>
+        <li>Participated in the WayneTech Scholarship Program for exceptional students.</li>
+        <li>Active member of the University’s martial arts club and led the team to several championships.</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Bruce Wayne. All rights reserved.</p>
+  </footer>
+
+  <!-- Bat Signal Animation -->
+  <div class="bat-signal"></div>
+</body>
+
+</html>
